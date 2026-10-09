@@ -1,0 +1,17 @@
+#constantes du jeu
+
+FOOD_LABELS = {
+    "STEAK": "STEAK",
+    "SALAD": "SALADE",
+    "WATER": "EAU",
+}
+
+FOOD_NAMES = tuple(FOOD_LABELS) 
+CLIENT_STATES = ("walking_to_table", "seated", "leaving", "gone")
+
+CLIENT_SPEED = 180
+CLIENT_LEAVING_SPEED = 220
+CLIENT_FADE_DURATION = 0.7
+CLIENT_RADIUS = 40
+PROJECTILE_RADIUS = 5
+PROJECTILE_MAX_BOUNCES = 6
