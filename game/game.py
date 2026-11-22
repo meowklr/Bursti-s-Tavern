@@ -20,7 +20,7 @@ class Game:
     HEIGHT = SCREEN_HEIGHT
     FPS = 60
     PROJECTILE_SPEED = 480
-    DEBUG_GRID = False
+    DEBUG_GRID = True
     CLIENT_SPAWN_DELAY = 5
     MAX_SEATED_CLIENTS = 5
 
