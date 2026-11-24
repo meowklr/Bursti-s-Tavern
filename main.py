@@ -7,4 +7,4 @@ pygame.init()
 game = Game()
 game.run()
 
-pygame.quit()
+pygame.quit() 
