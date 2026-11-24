@@ -1,5 +1,9 @@
 [
   {
+    "name": "camille",
+    "score": 2900
+  },
+  {
     "name": "tim3",
     "score": 2100
   },
@@ -12,8 +16,20 @@
     "score": 2000
   },
   {
+    "name": "pascalito",
+    "score": 2000
+  },
+  {
+    "name": "timdemovideo",
+    "score": 1900
+  },
+  {
     "name": "tim1",
     "score": 1200
+  },
+  {
+    "name": "kmi",
+    "score": 300
   },
   {
     "name": "zobi",
@@ -22,9 +38,5 @@
   {
     "name": "qdqdqzdrrrrf",
     "score": 100
-  },
-  {
-    "name": "paul",
-    "score": 0
   }
 ]
