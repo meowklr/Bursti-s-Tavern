@@ -1,6 +1,6 @@
 # Bursti's Tavern
 
-Bursti's Tavern est un jeu d'arcade 2D développé en Python avec Pygame CE, dans le cadre d'un projet de 2e année d'études. Le joueur incarne un serveur qui doit récupérer des aliments et les lancer aux clients assis dans la taverne avant que cinq tables soient occupées en même temps.
+Bursti's Tavern est un jeu d'arcade 2D développé en Python avec Pygame CE, dans le cadre d'un projet de 2e année d'études. Le joueur incarne un serveur qui doit récupérer des aliments et les lancer aux clients assis dans la taverne avant que cinq tables soient occupées en même temps. Projet réalisé dans le cadre d'un devoir en 2ème année d'études, assisté par IA.
 
 ## Fonctionnement
 

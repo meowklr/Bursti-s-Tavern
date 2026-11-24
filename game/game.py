@@ -20,12 +20,13 @@ class Game:
     HEIGHT = SCREEN_HEIGHT
     FPS = 60
     PROJECTILE_SPEED = 480
-    DEBUG_GRID = True
+    DEBUG_GRID = False
     CLIENT_SPAWN_DELAY = 5
     MAX_SEATED_CLIENTS = 5
 
     def __init__(self):
-        self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT)) #taille fenetre
+        self.fullscreen = False
+        self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT), pygame.SCALED) #taille fenetre
         pygame.display.set_caption("Bursti's Tavern") #nom de la fenetre
 
         self.clock = pygame.time.Clock()
@@ -80,6 +81,11 @@ class Game:
         self.game_over = False
         self.running = True
 
+    def toggle_fullscreen(self):
+        self.fullscreen = not self.fullscreen
+        flags = pygame.SCALED | (pygame.FULLSCREEN if self.fullscreen else 0)
+        self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT), flags)
+
     def handle_events(self):
         #gestion des evenements du jeu
         mouse_position = pygame.Vector2(pygame.mouse.get_pos()) #postion de la souris
@@ -89,7 +95,10 @@ class Game:
                 self.running = False
 
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_ESCAPE:
+                if event.key == pygame.K_F11:
+                    self.toggle_fullscreen()
+
+                elif event.key == pygame.K_ESCAPE:
                     if self.game_started and not self.game_over:
                         self.paused = not self.paused #mettre le jeu en pause / reprendre
                     else:
